@@ -2,7 +2,7 @@ import React from "react";
 
 function TripCard() {
     return (
-        <div> Place Holder </div>
+        <div> Place Holder</div>
     )
 }
 
