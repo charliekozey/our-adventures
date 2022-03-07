@@ -9,9 +9,11 @@ const tripsURL = ("http://localhost:3000/trips")
 
 function App() {
 
+
   fetch(tripsURL)
     .then(resp => resp.json())
     .then(data => (console.log(data)))
+
 
   return (
     <>
