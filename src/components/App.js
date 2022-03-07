@@ -6,7 +6,7 @@ import NewForm from "./NewForm";
 import '../App.css';
 
 function App() {
-  
+
 
   return (
     <>
@@ -19,4 +19,3 @@ function App() {
 }
 
 export default App;
-``
