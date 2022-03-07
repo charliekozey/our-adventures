@@ -12,7 +12,6 @@ return (
     <div className="ui four column grid">
       <div className="row">
         {mapTripsArray}
-        Collection of all bots
       </div>
     </div>
   );
