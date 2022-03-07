@@ -1,9 +1,8 @@
 import React from "react";
 import NavCard from "./NavCard";
 
-function NavBar({ tripArray }) {
-
-const mapTripArray = tripArray.map(trip => {
+function NavBar({ tripsArray }) {
+  const mapTripArray = tripArray.map((trip) => {
     return (
     <TripCard name={trip.name} location={trip.location} image={trip.image} description={trip.description} />
     )
@@ -16,6 +15,5 @@ return (
     </div>
   );
 }
-
 
 export default NavBar;
