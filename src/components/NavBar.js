@@ -1,18 +1,17 @@
 import React from "react";
-import NavCard from "./NavCard";
+import TripCard from "./TripCard";
 
-function NavBar() {
-  // const mapTripArray = tripArray.map((trip) => {
-  //   return (
-  //     <TripCard
-  //       name={trip.name}
-  //       location={trip.location}
-  //       image={trip.image}
-  //       description={trip.description}
-  //     />
-  //   );
-  // });
-
+function NavBar({ tripsArray }) {
+  const mapTripsArray = tripsArray.map((trip) => {
+    return (
+      <TripCard
+        name={trip.name}
+        // location={trip.location}
+        // image={trip.image}
+        // description={trip.description}
+      />
+    );
+  });
   return (
     <div className="mainNavigation">
       <nav
@@ -20,14 +19,7 @@ function NavBar() {
         aria-label="Main Navigation"
         data-testid="NavigationTrips">
         <ul className="mainList">
-          <li className="mainLink" data-testid="mainLevel_0" touch="false">
-            <div 
-              className="static"
-              role="button"
-              id="trip-container">
-              <div></div>
-            </div>
-          </li>
+        <div>{mapTripsArray}</div>
         </ul>
       </nav>
     </div>
