@@ -1,17 +1,17 @@
 import React from "react";
 import NavCard from "./NavCard";
 
-function NavBar({ tripsArray }) {
-  const mapTripArray = tripArray.map((trip) => {
-    return (
-      <TripCard
-        name={trip.name}
-        location={trip.location}
-        image={trip.image}
-        description={trip.description}
-      />
-    );
-  });
+function NavBar() {
+  // const mapTripArray = tripArray.map((trip) => {
+  //   return (
+  //     <TripCard
+  //       name={trip.name}
+  //       location={trip.location}
+  //       image={trip.image}
+  //       description={trip.description}
+  //     />
+  //   );
+  // });
 
   return (
     <div className="mainNavigation">
@@ -25,7 +25,7 @@ function NavBar({ tripsArray }) {
               className="static"
               role="button"
               id="trip-container">
-              <div>{mapTripsArray}</div>
+              <div></div>
             </div>
           </li>
         </ul>
