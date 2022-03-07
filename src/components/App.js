@@ -5,13 +5,15 @@ import TripCard from "./TripCard";
 import NewForm from "./NewForm";
 import '../App.css';
 
-function App() {
-  
 
+function App() {
+
+
+ main
   return (
     <>
       <Header />
-      <NavBar />
+      <NavBar tripsArray={tripsArray}/>
       <TripCard />
       <NewForm />
     </>
@@ -19,4 +21,3 @@ function App() {
 }
 
 export default App;
-``
