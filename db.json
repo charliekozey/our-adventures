@@ -2,7 +2,7 @@
     "trips": [
         {
             "id": 1,
-            "name": "Eric V",
+            "name": "Eric Van",
             "image": "/home/ggclarence/Development/code/phase-2/Phase-2-Project/our-adventures/public/images/274712121_506492791157604_5352161263726135693_n.jpg",
             "location": "Enchanted Rock",
             "continent": "TEXAS",
@@ -11,18 +11,18 @@
         {
             "id": 2,
             "name": "Paola",
-            "image": "",
-            "location": "",
-            "continent": "",
-            "description": ""
+            "image": "public/images/stockPhoto.jpg",
+            "location": "LocationTBD",
+            "continent": "continentTBD",
+            "description": "DescriptionTBD"
         },
         {
             "id": 3,
             "name": "Granit",
-            "image": "",
-            "location": "",
-            "continent": "",
-            "description": ""
+            "image": "public/images/stockPhoto.jpg",
+            "location": "LocationTBD",
+            "continent": "continentTBD",
+            "description": "DescriptionTBD"
         },
         {
             "id": 4,
