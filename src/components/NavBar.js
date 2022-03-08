@@ -1,27 +1,19 @@
 import React from "react";
-import TripCard from "./TripCard";
+import NavCard from "./NavCard";
 
-function NavBar({ tripsArray }) {
+function NavBar({ tripsArray}) {
+ 
   const mapTripsArray = tripsArray.map((trip) => {
     return (
-      <TripCard
+      <NavCard
         name={trip.name}
-        // location={trip.location}
-        // image={trip.image}
-        // description={trip.description}
       />
     );
   });
   return (
-    <div className="mainNavigation">
-      <nav
-        className="mbp2160 mbp2162"
-        aria-label="Main Navigation"
-        data-testid="NavigationTrips">
-        <ul className="mainList">
-        <div>{mapTripsArray}</div>
-        </ul>
-      </nav>
+    <div className="scrollmenu"> 
+      <div className="btn-group"> <button> {mapTripsArray} </button>   
+      </div>
     </div>
   );
 }

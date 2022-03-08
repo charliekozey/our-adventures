@@ -13,13 +13,11 @@ function App() {
   const [tripsArray, setTripsArray] = useState([])
 
   useEffect(() => {
-
   fetch(tripsURL)
     .then(resp => resp.json())
     .then(data => setTripsArray(data))
   })
-
-
+  
   return (
     <>
       <Header />
