@@ -1,8 +1,13 @@
 import React from "react";
 
-function TripCard() {
+function TripCard({ trip }) {
     return (
-       <div>Place Holder</div>
+        <div>
+            <h1>{trip.name}</h1>
+            <h2>{trip.location}</h2>
+            <img src={trip.image} alt="." />
+            <p>{trip.description}</p>
+        </div>
     )
 }
 
