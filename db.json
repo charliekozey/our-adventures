@@ -11,10 +11,10 @@
         {
             "id": 2,
             "name": "Paola",
-            "image": "",
-            "location": "",
-            "continent": "",
-            "description": ""
+            "image": "./public/images/grandma.jpg",
+            "location": "Rojas De Cuauhtémoc, Oaxaca",
+            "continent": "Mexico",
+            "description": "One of the last places I last visited was my mother's hometown of Rojas de Cuauhtémoc. Here My grandma was giving me a tour of where her hens tend to lay their eggs. The trick is too look in the baskets."
         },
         {
             "id": 3,
