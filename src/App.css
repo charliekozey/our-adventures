@@ -61,3 +61,10 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  padding: 0.25rem 1rem;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
