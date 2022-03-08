@@ -4,14 +4,12 @@ import NavBar from "./NavBar";
 import TripCard from "./TripCard";
 import NewForm from "./NewForm";
 import '../App.css';
-const tripsURL = ("http://localhost:3000/trips")
+
 
 
 function App() {
-
-
   const [tripsArray, setTripsArray] = useState([])
-  
+  const tripsURL = ("http://localhost:3000/trips")
 
   useEffect(() => {
 
