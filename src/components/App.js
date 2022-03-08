@@ -19,13 +19,16 @@ function App() {
     .then(data => setTripsArray(data))
   })
 
+  function handleAdd(newTrip){
+    console.log(newTrip)
+  }
 
   return (
     <>
       <Header />
       <NavBar tripsArray={tripsArray} />
       <TripCard />
-      <NewForm />
+      <NewForm handleAdd={handleAdd}/>
     </>
   );
 }
