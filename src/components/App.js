@@ -11,24 +11,33 @@ function App() {
 
 
   const [tripsArray, setTripsArray] = useState([])
+  
 
   useEffect(() => {
 
   fetch(tripsURL)
     .then(resp => resp.json())
     .then(data => setTripsArray(data))
-  })
+  },[])
 
-  function handleAdd(newTrip){
-    console.log(newTrip)
-  }
+
+  // Form Submit
+function addAdventure(newBlog){
+  console.log(newBlog)
+  // setTripsArray({...tripsArray, newBlog})
+  // Uncomment after NAVBAR is fixed
+  console.log(tripsArray)
+}
+  // Form Submit
+
+
 
   return (
     <>
       <Header />
       <NavBar tripsArray={tripsArray} />
       <TripCard />
-      <NewForm handleAdd={handleAdd}/>
+      <NewForm addAdventure={addAdventure}/>
     </>
   );
 }
