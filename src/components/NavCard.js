@@ -1,5 +1,4 @@
 import React from "react";
-const flatiron =("https://flatironschool.com/our-courses/")
 
 function NavCard({ name }) {
 
