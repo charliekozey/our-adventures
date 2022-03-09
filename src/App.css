@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+.newBlog {
+  background-color: #42b883;
+  width: 100%;
+  margin: auto;
+  padding: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newBlogTitle {
+  margin: auto;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  font-family: Garamond, serif;
+  font-size: 50px;
+  color: #35495e;
+  flex-direction: column;
+  align-items: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,73 +37,90 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+.header-OurAdventures {
+  margin: auto;
+  width: 100%;
+  background-color: #35495e;
+  padding: 50px;
+  text-align: center;
+  font-family: Garamond, serif;
+  font-size: 70px;
+  color: #ff7e67;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.btn-group{
-    width: 100%;
-    border-style: solid;
-    border-color: rgba(14, 8, 8, 0.46);
-    border-image: initial;
-    display: flex;
-    z-index: 10;
-    position: relative;
-    font-size: 16px;
-    white-space: nowrap;
-    border-width: 1px 0px;
-    flex-direction: column;
-    background-color: rgb(186, 239, 248);
-    color: rgb(255, 251, 251);
-    cursor: pointer;
-    font-size: min(1.2vw, 0.95rem);
-    font-family: LatoBold, sans-serif;
-    padding: clamp(0.2em, 0.5vw, 0.5em) clamp(0.2em, 0.5vw, 0.64em);
-    border-radius: 8px;
+.btn-group {
+  width: 100%;
+  border-style: solid;
+  border-color: rgba(14, 8, 8, 0.46);
+  border-image: initial;
+  display: flex;
+  z-index: 10;
+  position: relative;
+  font-size: 16px;
+  white-space: nowrap;
+  border-width: 1px 0px;
+  flex-direction: column;
+  background-color: #ff7e67;
+  color: #ff7e67(255, 251, 251);
+  cursor: pointer;
+  font-size: min(1.2vw, 0.95rem);
+  font-style: italic;
+  font-family: Garamond, serif;
+  padding: clamp(0.2em, 0.5vw, 0.5em) clamp(0.2em, 0.5vw, 0.64em);
+  border-radius: 8px;
+  margin: auto;
 }
 .trips button {
-    background-color: hwb(184 49% 5%); /*  background */
-    border: 1px solid rgb(75, 210, 228); /*  border */
-    color: rgb(3, 3, 3); /*  text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
-  }
-  .trips button:hover {
-    background-color: #7e7ec5;
-  }
-  .trips a.active {
-    background-color: #7e7ec5;
-  }
+  position: relative;
+  background-color: #ff7e67(184 49% 5%); /*  background */
+  top: 50%;
+  border: none; /*  border */
+  color: rgb(3, 3, 3); /*  text */
+  border-radius: 10px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+.trips button:hover {
+  background-color: #347474;
+}
+.trips a.active {
+  background-color: #ff7e67;
+}
 
-  div.scrollmenu {
-    background-color: rgb(149, 233, 248);
-    overflow: auto;
-    white-space: nowrap;
-  }
-  
-  div.scrollmenu a {
-    display: inline-block;
-    color: rgb(14, 12, 12);
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-  
-  div.scrollmenu a:hover {
-    background-color: rgb(104, 102, 102);
-  }
- 
+div.scrollmenu {
+  background-color: rgb(149, 233, 248);
+  overflow: auto;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: rgb(236, 236, 236);
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: rgb(104, 102, 102);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -95,4 +135,46 @@ button {
   font-family: inherit;
   border: none;
   cursor: pointer;
+}
+
+.formName {
+  padding: 10px;
+  border-radius: 10px;
+}
+.formLocation {
+  padding: 10px;
+  border-radius: 10px;
+}
+.formImage {
+  padding: 10px;
+  border-radius: 10px;
+}
+.formDescription {
+  padding: 10px;
+  border-radius: 10px;
+}
+.formFieldSet {
+  margin: 2em;
+  padding: 1em 1em;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  min-width: 500px;
+}
+.submitButtonDisplay {
+  position: relative;
+  background-color: #ff7e67(184 49% 5%); /*  background */
+  top: 50%;
+  border: none; /*  border */
+  color: rgb(3, 3, 3); /*  text */
+  border-radius: 10px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: right; /* Float the buttons side by side */
+}
+.tripCardDisplay {
+  background-color: #347474;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
