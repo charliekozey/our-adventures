@@ -4,10 +4,10 @@ function Header() {
 
     return (
         <header>
-            <h1>
+            <h1 class="header-OurAdventures">
                 Our Adventures
                 <span className="logo" role="img">
-                🗺
+                    🗺
                 </span>
             </h1>
         </header>
