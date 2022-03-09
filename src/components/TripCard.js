@@ -2,6 +2,7 @@ import React from "react";
 
 function TripCard({ trip }) {
     return (
+
         <div className= "tripCardDisplay">
             <div className= "container">
             {/* <h1>{trip.name}</h1>
