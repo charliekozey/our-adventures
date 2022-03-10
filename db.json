@@ -3,10 +3,10 @@
         {
             "id": 1,
             "name": "Eric Van",
-            "image": "/home/ggclarence/Development/code/phase-2/Phase-2-Project/our-adventures/public/images/274712121_506492791157604_5352161263726135693_n.jpg",
+            "image": "../public/images/274712121_506492791157604_5352161263726135693_n.jpg",
             "location": "Enchanted Rock",
             "continent": "TEXAS",
-            "description": "Encahnted rock is a Big rock that you hike up that takes 30mins, I dont go on vactaion much"
+            "description": "Enchanted rock is a Big rock that you hike up that takes 30mins, I don't go on vacation much"
         },
         {
             "id": 2,
@@ -14,12 +14,12 @@
             "image": "./public/images/grandma.jpg",
             "location": "Rojas De Cuauhtémoc, Oaxaca",
             "continent": "Mexico",
-            "description": "One of the last places I last visited was my mother's hometown of Rojas de Cuauhtémoc. Here My grandma was giving me a tour of where her hens tend to lay their eggs. The trick is too look in the baskets."
+            "description": "One of the last places I last visited was my mother's hometown of Rojas de Cuauhtémoc. Here My grandma was giving me a tour of where her hens tend to lay their eggs. The trick is to look in the baskets."
         },
         {
             "id": 3,
             "name": "Granit",
-            "image": "public/images/stockPhoto.jpg",
+            "image": "./public/images/stockPhoto.jpg",
             "location": "LocationTBD",
             "continent": "continentTBD",
             "description": "DescriptionTBD"
