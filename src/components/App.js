@@ -21,7 +21,7 @@ function App() {
   // Form Submit
 function addAdventure(newBlog){
   console.log(newBlog)
-  // setTripsArray({...tripsArray, newBlog})
+  setTripsArray({...tripsArray, newBlog})
   // Uncomment after NAVBAR is fixed
   console.log(tripsArray)
 }
