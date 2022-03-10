@@ -1,36 +1,50 @@
 {
-    "trips": [
-        {
-            "id": 1,
-            "name": "Eric Van",
-            "image": "/home/ggclarence/Development/code/phase-2/Phase-2-Project/our-adventures/public/images/274712121_506492791157604_5352161263726135693_n.jpg",
-            "location": "Enchanted Rock",
-            "continent": "TEXAS",
-            "description": "Encahnted rock is a Big rock that you hike up that takes 30mins, I dont go on vactaion much"
-        },
-        {
-            "id": 2,
-            "name": "Paola",
-            "image": "./public/images/grandma.jpg",
-            "location": "Rojas De Cuauhtémoc, Oaxaca",
-            "continent": "Mexico",
-            "description": "One of the last places I last visited was my mother's hometown of Rojas de Cuauhtémoc. Here My grandma was giving me a tour of where her hens tend to lay their eggs. The trick is too look in the baskets."
-        },
-        {
-            "id": 3,
-            "name": "Granit",
-            "image": "public/images/stockPhoto.jpg",
-            "location": "LocationTBD",
-            "continent": "continentTBD",
-            "description": "DescriptionTBD"
-        },
-        {
-            "id": 4,
-            "name": "Charlie",
-            "image": "./public/images/charlie-pig.jpeg",
-            "location": "Kerhonkson, NY",
-            "continent": "North America",
-            "description": "When I visited Wayward Ranch Animal Sanctuary, I met this pig!"
-        }
-    ]
+  "trips": [
+    {
+      "id": 1,
+      "name": "Eric Van",
+      "image": "https://i.imgur.com/nYo35GG.jpg",
+      "location": "Enchanted Rock",
+      "continent": "TEXAS",
+      "description": "Enchanted rock is a Big rock that you hike up that takes 30mins, I don't go on vacation much"
+    },
+    {
+      "id": 2,
+      "name": "Paola",
+      "image": "https://i.imgur.com/kh35ezi.jpg",
+      "location": "Rojas De Cuauhtémoc, Oaxaca",
+      "continent": "Mexico",
+      "description": "One of the last places I last visited was my mother's hometown of Rojas de Cuauhtémoc. Here My grandma was giving me a tour of where her hens tend to lay their eggs. The trick is to look in the baskets."
+    },
+    {
+      "id": 3,
+      "name": "Granit",
+      "image": "https://i.imgur.com/W8ooIr2.jpg",
+      "location": "LocationTBD",
+      "continent": "continentTBD",
+      "description": "DescriptionTBD"
+    },
+    {
+      "id": 4,
+      "name": "Charlie",
+      "image": "https://i.imgur.com/yTSwg5B.jpg",
+      "location": "Kerhonkson, NY",
+      "continent": "North America",
+      "description": "When I visited Wayward Ranch Animal Sanctuary, I met this pig!"
+    },
+    {
+      "name": "Peeop",
+      "location": "PeepoVile",
+      "image": "https://stayhipp.com/wp-content/uploads/2020/10/peepo.jpg",
+      "description": "It was :D",
+      "id": 5
+    },
+    {
+      "name": "Peepo2",
+      "location": "PepeBeach",
+      "image": "https://f8n-production-collection-assets.imgix.net/0x3B3ee1931Dc30C1957379FAc9aba94D1C48a5405/127442/QmahcQCkwpKgFrfHhKmt547HfN7sff42G5fvZAHAv4ATP5/nft.jpg?q=80&auto=format%2Ccompress&cs=srgb&max-w=1680&max-h=1680",
+      "description": "It was good weather!",
+      "id": 6
+    }
+  ]
 }
