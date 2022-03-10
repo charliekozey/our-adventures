@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import TripPage from "./TripPage";
+import NewForm from "./NewForm";
 import '../App.css';
 
 function App() {
@@ -25,9 +26,15 @@ function App() {
 
   function addAdventure(newBlog) {
     console.log(newBlog)
-    // setTripsArray({...tripsArray, newBlog})
-    // Uncomment after NAVBAR is fixed
-    console.log(tripsArray)
+    setTripsArray([...tripsArray,newBlog])
+    fetch("http://localhost:3000/trips",{
+      method: "POST",
+      body: JSON.stringify(newBlog),
+      headers: {"Content-type": "application/json; charset=UTF-8"}
+    })
+    .then(response => response.json())
+    .then(json => console.log(json));
+ 
   }
 
   // Form Submit
@@ -35,13 +42,6 @@ function App() {
 
 
   return (
-    // <div>
-    //   <Header />
-    //   <NavBar tripsArray={tripsArray} />
-    //   <TripCard />
-    //   <NewForm addAdventure={addAdventure} />
-    // </div>
-
     <div>
     <Header />
     <NavBar 
@@ -50,6 +50,7 @@ function App() {
     />
     <TripPage 
       displayedTrip={displayedTrip}
+      addAdventure={addAdventure}
     />
     </div>
   );

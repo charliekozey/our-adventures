@@ -12,7 +12,7 @@ function TripCard({ displayedTrip }) {
                 <div className= "container">
                     <h1>{displayedTrip.location}</h1>
                     <h3>{displayedTrip.name}</h3>
-                    <img className="responsive" src={displayedTrip.image} alt="." />
+                    <img className="responsive" src={displayedTrip.image} alt="error" />
                     <p>{displayedTrip.description}</p> 
                 </div>
             </Route>
