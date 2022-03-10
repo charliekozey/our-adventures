@@ -22,12 +22,14 @@ function App() {
   // Render TripCard when NavCard is clicked
 
   // Form Submit
+
   function addAdventure(newBlog) {
     console.log(newBlog)
     // setTripsArray({...tripsArray, newBlog})
     // Uncomment after NAVBAR is fixed
     console.log(tripsArray)
   }
+
   // Form Submit
 
 

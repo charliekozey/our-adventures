@@ -6,6 +6,7 @@ function TripCard({ displayedTrip }) {
     console.log(displayedTrip.image)
 
     return (
+
         <div className= "tripCardDisplay">
             <Route path={`/tripCard/${displayedTrip.name}`}>
                 <div className= "container">
