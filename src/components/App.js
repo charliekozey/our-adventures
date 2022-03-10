@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import NavBar from "./NavBar";
-import TripCard from "./TripCard";
-import NewForm from "./NewForm";
+import TripPage from "./TripPage";
 import '../App.css';
 
-
-
 function App() {
-  const [tripsArray, setTripsArray] = useState([])
-  const tripsURL = ("http://localhost:3000/trips")
+  const [tripsArray, setTripsArray] = useState([]);
+  const [displayedTrip, setDisplayedTrip] = useState({});
+  const tripsURL = ("http://localhost:3000/trips");
 
   useEffect(() => {
     fetch(tripsURL)
@@ -17,6 +15,11 @@ function App() {
       .then(data => setTripsArray(data))
   }, [])
 
+  // Render TripCard when NavCard is clicked
+  function selectTrip(trip) {
+    setDisplayedTrip(trip);
+  }
+  // Render TripCard when NavCard is clicked
 
   // Form Submit
   function addAdventure(newBlog) {
@@ -30,11 +33,22 @@ function App() {
 
 
   return (
+    // <div>
+    //   <Header />
+    //   <NavBar tripsArray={tripsArray} />
+    //   <TripCard />
+    //   <NewForm addAdventure={addAdventure} />
+    // </div>
+
     <div>
-      <Header />
-      <NavBar tripsArray={tripsArray} />
-      <TripCard />
-      <NewForm addAdventure={addAdventure} />
+    <Header />
+    <NavBar 
+      tripsArray={tripsArray}
+      selectTrip={selectTrip} 
+    />
+    <TripPage 
+      displayedTrip={displayedTrip}
+    />
     </div>
   );
 }
