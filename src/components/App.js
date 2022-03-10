@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import TripPage from "./TripPage";
-import NewForm from "./NewForm";
 import '../App.css';
 
 function App() {

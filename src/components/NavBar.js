@@ -15,7 +15,10 @@ function NavBar({ tripsArray, selectTrip }) {
   });
   return (
     <div className="scrollmenu"> 
-      <div className="btn-group"> <button> {mapTripsArray} </button>   
+      <div className="table"> 
+        <ul id="horizontal-list"> 
+          {mapTripsArray} 
+        </ul>
       </div>
     </div>
   );
