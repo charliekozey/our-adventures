@@ -5,6 +5,16 @@ import TripPage from "./TripPage";
 import '../App.css';
 
 function App() {
+
+
+  return (
+    <>
+      <Header />
+      <NavBar />
+      <TripCard />
+      <NewForm />
+    </>
+    
   const [tripsArray, setTripsArray] = useState([]);
   const [displayedTrip, setDisplayedTrip] = useState({});
   const tripsURL = ("http://localhost:3000/trips");
@@ -52,6 +62,7 @@ function App() {
       addAdventure={addAdventure}
     />
     </div>
+
   );
 }
 
