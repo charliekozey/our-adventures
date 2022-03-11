@@ -121,14 +121,17 @@ a:visited {
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
 }
-
-div.scrollmenu {
-  background-color: rgb(255, 255, 255);
-  overflow: auto;
-  white-space: nowrap;
-  margin-left: auto;
-  margin-right: auto;
+.active {
+  color: red;
 }
+
+/* div.scrollmenu { */
+/* background-color: rgb(255, 255, 255);
+  overflow: auto; */
+/* white-space: nowrap; */
+/* margin-left: auto;
+  margin-right: auto;
+} */
 
 div.scrollmenu a {
   display: inline-block;
@@ -146,6 +149,7 @@ div.scrollmenu a {
     transform: rotate(360deg);
   }
 } */
+
 
 .button {
   padding: 0.25rem 1rem;
@@ -200,12 +204,14 @@ div.scrollmenu a {
   background-color: #ffecd1;
   justify-content: space-evenly;
   flex-direction: column;
+  font-family: "PT Serif", serif;
 }
 
 #welcome {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 #about {
@@ -213,6 +219,8 @@ div.scrollmenu a {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-bottom: 20px;
+  font-size: 22px;
 }
 
 #submit-button {
@@ -226,6 +234,8 @@ div.scrollmenu a {
   color: rgb(3, 3, 3); /*  text */
   border-radius: 10px;
   cursor: pointer; /* Pointer/hand icon */
+  font-family: "PT Serif", serif;
+  font-size: 22px;
 }
 
 /* / css for home component */
@@ -273,135 +283,129 @@ ul#horizontal-list li {
   background-color: #ffecd1;
 }
 
-  /* TripCard CSS */
+/* TripCard CSS */
 
-  /* sumbit form */
+/* sumbit form */
 
-  *{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffecd1;
+  justify-content: center;
+}
+
+.form-group {
+  /* height:  20vh; */
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.452); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-group-description {
+  /* height:  20vh; */
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.452); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.containerB {
+  width: 90%;
+  max-width: 1000px;
+  /* max-height: 800px; */
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #21140c2e;
+  background-color: rgba(23, 39, 31, 0.15);
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 50%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+.form-group-description input,
+.form-group-description textarea {
+  width: 50%;
+  height: 120px;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 10px;
+  align-items: center;
+}
+
+button[type="submit"] {
+  width: 50%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "PT Serif", serif;
+  color: rbg(27, 166, 247);
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(66, 67, 155);
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#status.sucess {
+  background-color: skyblue;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
   }
-
-  section {
-    height: 100vh;
-    width: 100%;
-    background-color: #347474 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-direction: column;
+  90% {
+    opacity: 1;
+    pointer-events: all;
   }
-
-  .form-group{
-    /* height:  20vh; */
-    width: 100%;
-    /* background-color: rgba(255, 255, 255, 0.452); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 20px;
+  100% {
+    opacity: 0;
+    pointer-events: none;
   }
+}
 
-  .form-group-description{
-    /* height:  20vh; */
-    width: 100%;
-    /* background-color: rgba(255, 255, 255, 0.452); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 20px;
-  }
+.gb {
+  font-size: 90px;
+  text-align: center;
+}
 
-
-  .containerB{
-    width: 90%;
-    max-width: 1000px;
-    /* max-height: 800px; */
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0px 0px 20px #00000010;
-    background-color: rgba(23, 39, 31, 0.15);
-    margin-bottom: 20px;
-  }
-
-  .form-group input,
-  .form-group textarea{
-    width: 50%;
-    padding: 5px;
-    font-size: 18px;
-    border: 1px solid rgba(128,128,128,0.199);
-    margin-top: 5px;
-  }
-
-
-  .form-group-description input,
-  .form-group-description textarea{
-    width: 50%;
-    height: 120px;
-    padding: 5px;
-    font-size: 18px;
-    border: 1px solid rgba(128,128,128,0.199);
-    margin-top: 10px;
-    align-items: center;
-  }
-
-  button[type="submit"]{
-    width: 50%;
-    border: none;
-    outline: none;
-    padding: 20px;
-    font-size: 24px;
-    border-radius: 8px;
-    font-family:'PT Serif', serif ;
-    color:rbg(27,166,247);
-    cursor: pointer;
-    margin-top: 10px;
-    transition: .3s ease background-color;
-  }
-
-  button[type="submit"]:hover{
-    background-color: rgb(66, 67, 155);
-  }
-
-  #status{
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-
-  #status.sucess{
-    background-color: skyblue;
-  }
-
-  @keyframes status {
-    0% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    90% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    100% {
-      opacity: 0;
-      pointer-events: none;
-    }
-  }
-
-  .gb{
-    font-size: 90px;
-    text-align: center;
-  }
-  
-  #d{
-   width: 1000px;
-   height: 800px;
-   margin-left: 450px;
-  }
+#d {
+  width: 1000px;
+  height: 800px;
+  margin-left: 450px;
+}
