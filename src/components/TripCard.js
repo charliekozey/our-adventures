@@ -7,19 +7,19 @@ function TripCard({ displayedTrip }) {
 
     return (
 
-        <div className= "tripCardDisplay">
+        <div className="tripCardDisplay">
             <Route path={`/tripCard/${displayedTrip.name}`}>
-                <div className= "container">
+                <div className="container">
                     <h1 className="h1Card">{displayedTrip.location}</h1>
                     <img className="cardIMG" src={displayedTrip.image} alt="error" />
                     <div>
-                    <p className="tripP">{displayedTrip.name} - {displayedTrip.description}</p> 
-                    {/* <h3 className="h3card">{displayedTrip.name}</h3> */}
+                        <p className="tripP">{displayedTrip.name} - {displayedTrip.description}</p>
+                        {/* <h3 className="h3card">{displayedTrip.name}</h3> */}
                     </div>
                 </div>
             </Route>
         </div>
-        
+
     )
 }
 
