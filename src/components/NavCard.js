@@ -1,18 +1,18 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-function NavCard({ name }) {
+function NavCard({ name, trip, selectTrip }) {
 
-let windowObjectReference;
-let windowFeatures = "popup";
-
-function openRequestedPopup() {
-  windowObjectReference = window.open("https://flatironschool.com/our-courses/", windowFeatures);
+function handleClick() {
+  selectTrip(trip);
 }
 
   return (
-    <div className="trips">
-      <button onClick={openRequestedPopup}> {name} </button>
-    </div>
+    <li className="trips">
+      <NavLink to={`/tripCard/${trip.name}`}>
+        <button onClick={handleClick}> {name} </button>
+      </NavLink>
+    </li>
   );
 }
 
