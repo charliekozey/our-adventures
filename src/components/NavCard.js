@@ -8,7 +8,7 @@ function handleClick() {
 }
 
   return (
-    <li className="trips">
+    <li className="trips" >
       <NavLink to={`/tripCard/${trip.name}`}>
         <button onClick={handleClick}> {name} </button>
       </NavLink>

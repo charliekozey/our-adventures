@@ -3,15 +3,15 @@
 }
 
 #root {
-  background-color: #347474;
+  background-color: #ffecd1;
 }
 
 #body {
-  background-color: #347474;
+  background-color: #ffecd1;
 }
 
 .newBlog {
-  background-color: #42b883;
+  background-color: #ffecd1;
   width: 100%;
   margin: auto;
   padding: 0.2px;
@@ -26,7 +26,7 @@
   text-align: center;
   font-family: Garamond, serif;
   font-size: 50px;
-  color: #35495e;
+  color: #050505;
   flex-direction: column;
   align-items: left;
   margin-left: auto;
@@ -51,23 +51,32 @@
   align-items: center;
   justify-content: center;
   color: white;
-  
 }
 .header-OurAdventures {
   margin: auto;
   width: 100%;
-  background-color: #35495e;
+  background-color: #ffecd1;
   padding: 0.2px;
   text-align: center;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 70px;
-  color: #ff7e67;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
+  color: #7b3e19;
+}
+a {
+  text-decoration: none;
+  color: #7b3e19;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #7b3e19;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #8693ab;
 }
 
 /* .btn-group {
@@ -95,16 +104,15 @@
 } */
 
 .table {
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
-  background-color: #347474;
+  display: table; /* Allow the centering to work */
+  margin: 0 auto;
+  background-color: #ffecd1;
 }
-
-
 
 .trips button {
   position: relative;
-  background-color: #ff7e67(184 49% 5%); /*  background */
+  background-color: #ffecd1(184 49% 5%); /*  background */
+  color: #ff7d00;
   top: 50%;
   border: none; /*  border */
   color: rgb(3, 3, 3); /*  text */
@@ -112,12 +120,6 @@
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-}
-.trips button:hover {
-  background-color: #347474;
-}
-.trips a.active {
-  background-color: #ff7e67;
 }
 
 div.scrollmenu {
@@ -134,10 +136,6 @@ div.scrollmenu a {
   text-align: center;
   padding: 20px;
   text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-  background-color: rgb(104, 102, 102);
 }
 
 /* @keyframes App-logo-spin {
@@ -192,17 +190,16 @@ div.scrollmenu a:hover {
   float: right; /* Float the buttons side by side */
 }
 .tripCardDisplay {
-  background-color: #347474;
+  background-color: #ffecd1;
 }
 
 /* css for home component */
 
 .trip-window {
   display: flex;
-  background-color: #347474;
+  background-color: #ffecd1;
   justify-content: space-evenly;
   flex-direction: column;
-  
 }
 
 #welcome {
@@ -223,6 +220,12 @@ div.scrollmenu a:hover {
   height: 60px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  top: 50%;
+  border: none; /*  border */
+  color: rgb(3, 3, 3); /*  text */
+  border-radius: 10px;
+  cursor: pointer; /* Pointer/hand icon */
 }
 
 /* / css for home component */
@@ -237,33 +240,36 @@ div.scrollmenu a:hover {
 }
 
 ul#horizontal-list {
-	min-width: 696px;
-	list-style: none;
-	padding-top: 20px;
-	}
-	ul#horizontal-list li {
-		display: inline;
-	}
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+}
+ul#horizontal-list li {
+  display: inline;
+}
 
-  /* TripCard CSS */
+/* TripCard CSS */
 .h1Card {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   text-align: center;
 }
 
-.cardIMG{
-  width: 300px;
-  height: 400px;
+.cardIMG {
+  max-width: 100%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-.tripP{
+.tripP {
   text-align: center;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-weight: 300;
 }
+.container {
+  background-color: #ffecd1;
+}
 
-  /* TripCard CSS */
+/* TripCard CSS */
