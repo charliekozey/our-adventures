@@ -6,14 +6,13 @@ import '../App.css';
 
 function App() {
 
-
-  return (
-    <>
-      <Header />
-      <NavBar />
-      <TripCard />
-      <NewForm />
-    </>
+  // return (
+  //   <>
+  //     <Header />
+  //     <NavBar />
+  //     <TripCard />
+  //     <NewForm />
+  //   </>
     
   const [tripsArray, setTripsArray] = useState([]);
   const [displayedTrip, setDisplayedTrip] = useState({});

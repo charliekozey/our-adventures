@@ -16,7 +16,7 @@ function TripPage({ addAdventure, displayedTrip }) {
                 <NewForm addAdventure={addAdventure} />
             </Route>
             <Route exact path="/">
-                <Home />
+                <Home id="trip-container"/>
             </Route>
         </Switch>
     )
