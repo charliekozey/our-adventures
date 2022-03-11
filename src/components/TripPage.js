@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import TripCard from "./TripCard";
 import NewForm from "./NewForm";
 import Home from "./Home.js";
-
+import EasterEgg from "../setUpProject/ContactForm";
 
 function TripPage({ addAdventure, displayedTrip }) {
 
@@ -17,6 +17,9 @@ function TripPage({ addAdventure, displayedTrip }) {
             </Route>
             <Route exact path="/">
                 <Home id="trip-container"/>
+            </Route>
+            <Route exact path="/kiwis">
+                <EasterEgg/>
             </Route>
         </Switch>
     )
