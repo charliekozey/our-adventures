@@ -253,6 +253,8 @@ ul#horizontal-list {
   min-width: 696px;
   list-style: none;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 ul#horizontal-list li {
   display: inline;
